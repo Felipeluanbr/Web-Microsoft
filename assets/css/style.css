@@ -99,10 +99,50 @@ header {
 
         }
 
-        a{
+        a {
             color: #0067b8;
             font-size: 1.2rem;
             font-weight: 500;
         }
     }
+}
+
+.container-card {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+
+    .wrapper-card {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 1500px;
+        width: 100%;
+
+        .card {
+            flex-grow: 1;
+            border: none;
+            box-shadow: 0 .1875rem .4375rem 0 rgba(0, 0, 0, .13), 0 .0625rem .125rem 0 rgba(0, 0, 0, .11);
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;/*deixa os botões em baixo do card*/
+
+               .card-text {
+                    margin-bottom:10px ;
+                }
+            }
+        }
+    }
+
+}
+
+.btn.btn-primary {
+border: none;
+border-radius: 0;
+background-color: #0067b8;
 }
